@@ -34,8 +34,9 @@ function App() {
       <div className="connect-container">
         <a href="https://www.linkedin.com/in/jordanlin2003/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
         <a href="https://github.com/jardondaful" target="_blank" rel="noopener noreferrer">GitHub</a> |
-        <a href="https://docs.google.com/document/d/e/2PACX-1vQxrHOtC9DG3ZRSDjh-fJrIp1h39KFJVbchdwjkCgcHQvQsRVDsV8qy6ZVdthFgXLSSCjEZUn1wewQo/pub" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="https://drive.google.com/file/d/1HN2tPJzlOL6bvYBOPUmMpDVP_E4Sh-gM/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
+
     </header>
 
       {/* Directly embedding sections/components for a single continuous page */}
