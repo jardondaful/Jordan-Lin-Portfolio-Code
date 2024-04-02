@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 .project-category-buttons {
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+  }
+  body, button {
+    font-family: 'Nunito', sans-serif;
   }
   
   .project-category-buttons button {
