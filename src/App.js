@@ -27,11 +27,16 @@ function App() {
 
   return (
     <div className={`App ${scrollClass}`}>
-      <header className={`App-header section-fade ${scrollClass}`}>
-        <img src={images.profile_picture} alt="Jordan Lin" className="profile-picture" />
-        <h1>Jordan Lin</h1>
-        <p style={{ marginTop: '30px' }}>Developer, IT Technician, GIS Analyst</p>
-      </header>
+    <header className={`App-header section-fade ${scrollClass}`}>
+      <img src={images.profile_picture} alt="Jordan Lin" className="profile-picture" />
+      <h1>Jordan Lin</h1>
+      <p style={{ marginTop: '30px', marginBottom: '20px' }}>Developer, IT Technician, GIS Analyst</p>
+      <div className="connect-container">
+        <a href="https://www.linkedin.com/in/jordanlin2003/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a href="https://github.com/jardondaful" target="_blank" rel="noopener noreferrer">GitHub</a> |
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQxrHOtC9DG3ZRSDjh-fJrIp1h39KFJVbchdwjkCgcHQvQsRVDsV8qy6ZVdthFgXLSSCjEZUn1wewQo/pub" target="_blank" rel="noopener noreferrer">Resume</a>
+      </div>
+    </header>
 
       {/* Directly embedding sections/components for a single continuous page */}
       {/* <Home /> */}

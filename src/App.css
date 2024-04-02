@@ -206,3 +206,19 @@ body {
   margin-bottom: 20px; /* Adds some space below the picture */
 }
 
+.connect-container {
+  text-align: center; /* Center the links container */
+  padding: 10px 0; /* Add some vertical padding */
+}
+
+.connect-container a {
+  margin: 0 10px; /* Add horizontal margin between links */
+  text-decoration: none; /* Remove the underline from links */
+  color: #007bff; /* Blue color for links */
+  transition: color 0.3s ease; /* Smooth color transition for hover effect */
+}
+
+.connect-container a:hover {
+  color: #0056b3; /* Darker shade of blue on hover */
+}
+
