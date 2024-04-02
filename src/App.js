@@ -45,13 +45,13 @@ function App() {
       {/* <Navbar /> Place the Navbar component here */}
       <header className={`App-header section-fade  ${scrollClass}`}> {/* Add the "navbar" class */}
         <h1>Jordan Lin</h1>
-        <p style={{ marginTop: '30px' }}>Esri IST Apps Developer, GIS Enthusiast</p>
+        <p style={{ marginTop: '30px' }}> Developer, IT Technician, GIS Analyst</p>
       </header>
 
       <section className={`about-section section-fade ${scrollClass}`}>
         <h2>About Me</h2>
         <p>
-        Welcome to my space on the web!  I'm a senior at UCLA, pursuing a major in Computer Science and Engineering (CSE) and a minor in Geospatial Information Systems 
+        Welcome to my space on the web!  I completed my B.S. in Computer Science and Engineering (CSE) with a minor in Geospatial Information Systems 
         and Technologies (GIS&T). Currently, I'm working at Esri as a developer in the IST department, where I'm harnessing my passion for programming 
         to revamp current company software. My technological journey is fueled by a commitment to elevate user experiences and revitalize legacy systems.
         </p>
