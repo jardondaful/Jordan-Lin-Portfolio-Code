@@ -4,7 +4,8 @@ import images from './images';
 
 function Projects() {
   const [activeCategory, setActiveCategory] = useState('CS');
-  const [trailMatchIndex, setTrailMatchIndex] = useState(0);
+  const [projectIndexes, setProjectIndexes] = useState({});
+  
 
   const csProjects = [
     {
@@ -31,11 +32,38 @@ function Projects() {
       description: 'This was made with ArcGIS Pro and ArcGIS Dashboards, showcasing California\'s highest temperatures during the month of August. The interactive map highlights statewide temperature patterns and identifies major cities\' hottest and coldest points, fusing application design and data analytics with the power of GIS.',
       image: images.DashboardImage,
     },
+    {
+      name: 'Bruin Bus Stop Locator',
+      description: 'The Bus Stop Locator for Bruins is a Python-scripted toolbox built in ArcGIS Pro. The purpose of this project is to help locate bus stops within a desired proximity and provide recommendations on which buses to take based on current user inputted data. As output, it generates directions on which bus stops and routes to take in terminal and generates visual layouts of such directions.',
+      images: [
+        images.bruin_bus_stop_final_route_output,
+        images.bruin_bus_stop_locator_terminal,
+        images.bruin_bus_stop_locator_closest_facility_1,
+        images.bruin_bus_stop_locator_closest_facility_2
+      ],
+    },
     // Add more GIS projects as needed
   ];
 
-  const handleTrailMatchNavigation = (offset) => {
-    setTrailMatchIndex((trailMatchIndex + offset + csProjects[0].images.length) % csProjects[0].images.length);
+   // Function to chunk the project array into sub-arrays of length 2
+   const chunkedProjects = (projects) => {
+    const chunked = [];
+    for (let i = 0; i < projects.length; i += 2) {
+      chunked.push(projects.slice(i, i + 2));
+    }
+    return chunked;
+  };
+
+  const handleNavigation = (projectName, offset) => {
+    setProjectIndexes((prevIndexes) => ({
+      ...prevIndexes,
+      [projectName]: (prevIndexes[projectName] || 0) + offset,
+    }));
+  };
+
+  // Function to get the current index for a project
+  const getCurrentIndex = (projectName) => {
+    return projectIndexes[projectName] || 0;
   };
 
   const displayedProjects = activeCategory === 'CS' ? csProjects : gisProjects;
@@ -51,25 +79,27 @@ function Projects() {
           GIS Projects
         </button>
       </div>
-      <div className="project-group">
-        {displayedProjects.map((project, index) => (
-          <div className="project" key={index}>
-            <h3>{project.name}</h3>
-            <div className="project-image-container">
-              {project.images ? (
-                <>
-                  <button className="arrow-button left-arrow" onClick={() => handleTrailMatchNavigation(-1)}>←</button>
-                  <img src={project.images[trailMatchIndex]} alt={project.name + " project"} />
-                  <button className="arrow-button right-arrow" onClick={() => handleTrailMatchNavigation(1)}>→</button>
-                </>
-              ) : (
-                <img src={project.image} alt={project.name + " project"} />
-              )}
+      {chunkedProjects(displayedProjects).map((projectRow, rowIndex) => (
+        <div className="project-row" key={rowIndex}>
+          {projectRow.map((project, projIndex) => (
+            <div className="project" key={projIndex}>
+              <h3>{project.name}</h3>
+              <div className="project-image-container">
+                {project.images && project.images.length > 1 ? (
+                  <>
+                    <button className="arrow-button left-arrow" onClick={() => handleNavigation(project.name, -1)} disabled={getCurrentIndex(project.name) === 0}>←</button>
+                    <img src={project.images[getCurrentIndex(project.name)]} alt={`${project.name} image`} />
+                    <button className="arrow-button right-arrow" onClick={() => handleNavigation(project.name, 1)} disabled={getCurrentIndex(project.name) === project.images.length - 1}>→</button>
+                  </>
+                ) : (
+                  <img src={project.image || (project.images && project.images[0])} alt={`${project.name} image`} />
+                )}
+              </div>
+              <p>{project.description}</p>
             </div>
-            <p>{project.description}</p>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      ))}
     </section>
   );
 }

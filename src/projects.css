@@ -73,4 +73,40 @@
   .right-arrow {
     right: 20px; /* Slightly away from the edge for spacing */
   }
+  .projects-section {
+    /* Ensure there's padding around the entire section if desired */
+    padding: 20px;
+  }
+  
+  .project-row {
+    /* Remove any margin or padding that may affect the symmetry */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* This will space out the projects equally */
+    flex-wrap: wrap; /* Allows project cards to wrap to the next line */
+  }
+  
+  .project {
+    /* Apply equal margin to all sides of the projects for symmetry */
+    margin: 10px; /* Adjust this value to suit the desired gap */
+    flex: 1 0 calc(50% - 20px); /* Adjust the 20px to double the margin */
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    
+    /* Keep max-width to limit how much space a project can take, and min-width to prevent them from getting too small */
+    max-width: calc(50% - 20px); /* Adjust the 20px to double the margin */
+    min-width: 300px; /* Minimum width of each project card */
+  }
+  
+  .project-image-container {
+    /* Add styles for image container if needed */
+  }
+  
+  /* Add responsive styles if needed for smaller screens */
+  @media screen and (max-width: 600px) {
+    .project {
+      flex-basis: 100%; /* On small screens, each project takes full width */
+      max-width: 100%; /* Projects stretch to full container width */
+    }
+  }
   
