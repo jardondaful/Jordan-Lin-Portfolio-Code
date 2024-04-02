@@ -6,19 +6,65 @@
   .project-category-buttons button {
     padding: 10px 20px;
     margin-right: 10px;
-    border: none;
+    border: 2px solid #ccc; /* Slight border to buttons for definition */
     border-radius: 5px;
     background-color: #f0f0f0;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s ease, color 0.3s;
+    /* Ensure the text is centered in the button */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .project-category-buttons button:hover {
     background-color: #dedede;
+    color: #333; /* Darker text color on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+  }
+  
+  .project-category-buttons button:active {
+    transform: scale(0.95); /* Slightly decreases size on click */
   }
   
   .project-category-buttons button.active {
     background-color: #007bff;
     color: white;
+    border-color: #0056b3; /* Border color similar to background for active button */
+  }
+  
+  .arrow-button {
+    border-radius: 50%;
+    background-color: #ffffff; /* A clean white background */
+    color: #007bff; /* A blue color for the arrow to make it stand out */
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 2px solid #007bff; /* A blue border to match the arrow color */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .arrow-button:hover {
+    background-color: #007bff; /* Change background to blue on hover */
+    color: #ffffff; /* Change arrow to white on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow size for depth */
+  }
+  
+  /* Adjustments to the left and right positions */
+  .left-arrow {
+    left: 20px; /* Slightly away from the edge for spacing */
+  }
+  
+  .right-arrow {
+    right: 20px; /* Slightly away from the edge for spacing */
   }
   

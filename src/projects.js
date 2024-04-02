@@ -9,12 +9,12 @@ function Projects() {
   const csProjects = [
     {
       name: 'TrailMatch: Hiking Made Easy',
-      description: 'An innovative app that matches hikers to trails based on skill level and scenic preferences.',
+      description: 'TrailMatch combines the intelligent insights of ChatGPT with ArcGIS\'s dynamic mapping to present an unparalleled 3D hiking journey, complete with a sunshine rating and locations of essential amenities like gas and electric charging stations. This synergy ensures a tailored and hassle-free outdoor experience, enhancing every step with interactive guidance and practical information.',
       images: [images.trailmatchImage, images.trailMatchCardImage, images.trailMatchMapImage],
     },
     {
       name: 'Bruin Bites',
-      description: 'A platform for UCLA students to explore and rate dining options around campus.',
+      description: 'Bruin Bites is a website that allows UCLA students to more easily connect with their friends through food! Right off the bat, a new user can use the website to view what each restaurant/take-out option is serving, view their respective ratings, and even make them themselves.',
       image: images.BruinBitesImage,
     },
     // Add more CS projects as needed
@@ -23,12 +23,12 @@ function Projects() {
   const gisProjects = [
     {
       name: 'Sage Hill National Park Drone Imagery Analysis',
-      description: 'Utilizing drone technology to map and analyze the topography of Sage Hill National Park.',
+      description: 'My Sage Hill National Park Drone Imagery project utilizes a DJI Mavic 3 drone equipped with an Altum sensor to map the park\'s landscape. The left image displays processed drone imagery, highlighting the flight path (orange) and capture points (yellow). The right image shows the raw imagery. Pink points on both represent manual data collection sites, essential for verifying the orthomosaic\'s radiometric accuracy from the drone\'s multispectral imaging.',
       image: images.DroneImagery,
     },
     {
       name: 'California Cities Weather Dashboard',
-      description: 'Interactive dashboard displaying weather patterns and data across California cities.',
+      description: 'This was made with ArcGIS Pro and ArcGIS Dashboards, showcasing California\'s highest temperatures during the month of August. The interactive map highlights statewide temperature patterns and identifies major cities\' hottest and coldest points, fusing application design and data analytics with the power of GIS.',
       image: images.DashboardImage,
     },
     // Add more GIS projects as needed
