@@ -42,8 +42,10 @@ function App() {
 
   return (
     <div className={`App ${scrollClass}`}>
-      {/* <Navbar /> Place the Navbar component here */}
-      <header className={`App-header section-fade  ${scrollClass}`}> {/* Add the "navbar" class */}
+      {/* <Navbar /> */}
+      <header className={`App-header section-fade ${scrollClass}`}>
+        {/* Profile picture */}
+        <img src={images.profile_picture} alt="Jordan Lin" className="profile-picture" />
         <h1>Jordan Lin</h1>
         <p style={{ marginTop: '30px' }}> Developer, IT Technician, GIS Analyst</p>
       </header>

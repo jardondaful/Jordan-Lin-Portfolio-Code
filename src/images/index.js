@@ -7,6 +7,8 @@ import ScImage from './SC_5ft_Elevation.png'
 import CellTowersImage from './Cell_Towers_LA.png'
 import DroneImagery from './handheld_spectrometer_points.png'
 import Altum from './altum.png'
+import profile_picture from './profile_picture.jpeg'
+
 const images = {
   trailmatchImage,
   trailMatchCardImage,
@@ -16,7 +18,8 @@ const images = {
   ScImage,
   CellTowersImage,
   DroneImagery,
-  Altum
+  Altum,
+  profile_picture
 };
 
 export default images;

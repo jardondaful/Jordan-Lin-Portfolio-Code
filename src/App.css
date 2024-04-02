@@ -193,3 +193,12 @@ body {
     transform: translateY(0);
   }
 }
+
+.profile-picture {
+  width: 200px; /* Or the size you prefer */
+  height: 200px; /* Should be the same as width for a perfect circle */
+  border-radius: 50%; /* This creates the circular shape */
+  border: 1px solid white; /* Optional: adds a white border around the picture */
+  object-fit: cover; /* This will cover the area without stretching the picture */
+  margin-bottom: 20px; /* Adds some space below the picture */
+}
