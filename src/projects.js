@@ -36,7 +36,7 @@ function Projects() {
       name: 'Bruin Bus Stop Locator',
       description: 'The Bus Stop Locator for Bruins is a Python-scripted toolbox built in ArcGIS Pro. The purpose of this project is to help locate bus stops within a desired proximity and provide recommendations on which buses to take based on current user inputted data. As output, it generates directions on which bus stops and routes to take in terminal and generates visual layouts of such directions.',
       images: [
-        images.bruin_bus_stop_final_route_output,
+        images.bruin_bus_stop_locator_final_route_output,
         images.bruin_bus_stop_locator_terminal,
         images.bruin_bus_stop_locator_closest_facility_1,
         images.bruin_bus_stop_locator_closest_facility_2
