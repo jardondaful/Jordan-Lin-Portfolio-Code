@@ -99,7 +99,18 @@
   }
   
   .project-image-container {
-    /* Add styles for image container if needed */
+    overflow: hidden; /* Hide the overflowed images */
+    position: relative; /* Set a stacking context */
+  }
+  
+  .project-images {
+    display: flex; /* Align images horizontally */
+    transition: transform 0.5s ease-out; /* Smooth transition for the transform property */
+  }
+  
+  .project-image {
+    min-width: 100%; /* Each image takes the full width of the container */
+    transition: opacity 0.5s ease-in-out; /* Fade effect for changing images */
   }
   
   /* Add responsive styles if needed for smaller screens */

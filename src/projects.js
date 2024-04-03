@@ -54,19 +54,20 @@ function Projects() {
     return chunked;
   };
 
-  const handleNavigation = (projectName, offset) => {
-    setProjectIndexes((prevIndexes) => ({
-      ...prevIndexes,
-      [projectName]: (prevIndexes[projectName] || 0) + offset,
-    }));
+  const handleNavigation = (projectName, offset, length) => {
+    setProjectIndexes(prevIndexes => {
+      const currentIndex = (prevIndexes[projectName] || 0) + offset;
+      const newIndex = (currentIndex + length) % length; // Wrap around the images
+      return { ...prevIndexes, [projectName]: newIndex };
+    });
   };
 
-  // Function to get the current index for a project
-  const getCurrentIndex = (projectName) => {
+  const getCurrentIndex = projectName => {
     return projectIndexes[projectName] || 0;
   };
 
   const displayedProjects = activeCategory === 'CS' ? csProjects : gisProjects;
+  const chunkedDisplayProjects = chunkedProjects(displayedProjects, 3);
 
   return (
     <section className="projects-section">
@@ -79,24 +80,52 @@ function Projects() {
           GIS Projects
         </button>
       </div>
-      {chunkedProjects(displayedProjects).map((projectRow, rowIndex) => (
+      {chunkedDisplayProjects.map((projectRow, rowIndex) => (
         <div className="project-row" key={rowIndex}>
-          {projectRow.map((project, projIndex) => (
-            <div className="project" key={projIndex}>
-              <h3>{project.name}</h3>
-              <div className="project-image-container">
-                {project.images && project.images.length > 1 ? (
-                  <>
-                    <button className="arrow-button left-arrow" onClick={() => handleNavigation(project.name, -1)} disabled={getCurrentIndex(project.name) === 0}>←</button>
-                    <img src={project.images[getCurrentIndex(project.name)]} alt={`${project.name} image`} />
-                    <button className="arrow-button right-arrow" onClick={() => handleNavigation(project.name, 1)} disabled={getCurrentIndex(project.name) === project.images.length - 1}>→</button>
-                  </>
-                ) : (
-                  <img src={project.image || (project.images && project.images[0])} alt={`${project.name} image`} />
-                )}
+          {projectRow.map((project, projectIndex) => (
+        <div className="project" key={projectIndex}>
+        <h3>{project.name}</h3>
+        <div className="project-image-container">
+          {project.images && project.images.length > 1 && ( // Only render buttons if there are multiple images
+            <>
+              <button 
+                className="arrow-button left-arrow" 
+                onClick={() => handleNavigation(project.name, -1, project.images.length)}
+              >
+                ←
+              </button>
+              {/* The container div for images with a dynamic inline style for transitions */}
+              <div
+                className="project-images"
+                style={{
+                  transform: `translateX(-${getCurrentIndex(project.name, project.images.length) * 100}%)`,
+                  transition: 'transform 0.5s ease-out' // This adds the transition effect
+                }}
+              >
+                {/* Map over the images and render each one */}
+                {project.images.map((image, imgIndex) => (
+                  <img
+                    key={imgIndex}
+                    src={image}
+                    alt={`${project.name} image`}
+                    className="project-image"
+                  />
+                ))}
               </div>
-              <p>{project.description}</p>
-            </div>
+              <button 
+                className="arrow-button right-arrow" 
+                onClick={() => handleNavigation(project.name, 1, project.images.length)}
+              >
+                →
+              </button>
+            </>
+          )}
+          {(!project.images || project.images.length === 1) && ( // Render single image without buttons
+            <img src={project.image || project.images[0]} alt={`${project.name} image`} className="project-image"/>
+          )}
+        </div>
+        <p>{project.description}</p>
+      </div>
           ))}
         </div>
       ))}
