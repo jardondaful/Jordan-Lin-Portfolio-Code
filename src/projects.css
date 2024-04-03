@@ -88,6 +88,7 @@
   }
   
   .project {
+    flex-grow: 1; /* Allows the project to grow and fill the parent */
     /* Apply equal margin to all sides of the projects for symmetry */
     margin: 10px; /* Adjust this value to suit the desired gap */
     flex: 1 0 calc(50% - 20px); /* Adjust the 20px to double the margin */
@@ -114,10 +115,25 @@
   }
   
   /* Add responsive styles if needed for smaller screens */
-  @media screen and (max-width: 600px) {
+ 
+  @media screen and (max-width: 768px) {
+    .project-row {
+      /* flex-direction: column; This ensures projects are stacked vertically */
+    }
+  
     .project {
-      flex-basis: 100%; /* On small screens, each project takes full width */
-      max-width: 100%; /* Projects stretch to full container width */
+      flex: 0 0 100%; /* This makes the project take up the full width */
+      max-width: 100%; /* Ensures the project does not exceed the container's width */
+      margin: 10px 0; /* Provides vertical spacing between projects; remove side margins if any */
+      box-sizing: border-box; /* Ensures that padding and border are included in the element's total width and height */
+    }
+  
+    .project-image-container {
+      width: 100%; /* Ensures the image container takes up the full width of the project */
+    }
+  
+    .project-image {
+      width: 100%; /* Ensures images stretch to the full width of their container */
+      height: auto; /* Maintains the aspect ratio of the images */
     }
   }
-  
