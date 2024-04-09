@@ -118,22 +118,31 @@
  
   @media screen and (max-width: 768px) {
     .project-row {
-      /* flex-direction: column; This ensures projects are stacked vertically */
+      /* Ensures projects are stacked vertically on small screens */
+      flex-direction: column; 
     }
   
     .project {
-      flex: 0 0 100%; /* This makes the project take up the full width */
-      max-width: 100%; /* Ensures the project does not exceed the container's width */
-      margin: 10px 0; /* Provides vertical spacing between projects; remove side margins if any */
-      box-sizing: border-box; /* Ensures that padding and border are included in the element's total width and height */
+      /* This makes the project take up the full width of its container */
+      flex: 0 0 100%;
+      max-width: 100%;
+      /* Adjusts the margin to provide space between the projects */
+      margin: 10px 0; 
+      /* Additional padding can be adjusted as needed */
+      padding: 0 10px;
+      /* Ensures that padding is included in the element's total width and height */
+      box-sizing: border-box; 
     }
   
-    .project-image-container {
-      width: 100%; /* Ensures the image container takes up the full width of the project */
-    }
-  
+    .project-image-container,
     .project-image {
-      width: 100%; /* Ensures images stretch to the full width of their container */
+      /* Ensures image containers and images stretch to the full width of their container */
+      width: 100%;
       height: auto; /* Maintains the aspect ratio of the images */
+    }
+  
+    /* Remove left and right arrows in mobile view for simplicity or adjust their positioning as needed */
+    .arrow-button {
+      display: none;
     }
   }

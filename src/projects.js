@@ -18,14 +18,30 @@ function Projects() {
       description: 'Bruin Bites is a website that allows UCLA students to more easily connect with their friends through food! Right off the bat, a new user can use the website to view what each restaurant/take-out option is serving, view their respective ratings, and even make them themselves.',
       image: images.BruinBitesImage,
     },
+    
+    {
+        name: 'HaggleHaul',
+        description: 'HaggleHaul is a web app designed to democratize ridesharing and allow users to schedule rides in advance amidst surge pricing and ride deserts. It features separate account types for Riders and Drivers, enabling Riders to post and receive bids for prescheduled trips. Riders can then select the most suitable driver based on bids received, thus determining the cost and driver for their trip.',
+        image: images.HaggleHaul,
+    },
     // Add more CS projects as needed
   ];
 
   const gisProjects = [
     {
+      name: 'Mapping Vernal Swale Italian Thistle Invasion',
+      description: 'This project entailed a detailed mapping of the invasive Italian Thistle spread within UC Sedgwick Reserve\'s Vernal Swale, utilizing UAV-based imagery. After a notably wet winter—the first significant hydration of the swale in a decade—an unexpected proliferation of Italian Thistle was observed. Our team deployed sophisticated UAV technology to capture high-resolution imagery, which, combined with ground truth data, offered a comprehensive analysis of the thistle\'s distribution and potential growth trajectories. This study not only underscores the critical importance of managing invasive species to preserve native biodiversity but also leverages cutting-edge tech to forecast ecological shifts within these natural reserves.',
+      image: images.vernal_swale,
+    },
+    {
       name: 'Sage Hill National Park Drone Imagery Analysis',
       description: 'My Sage Hill National Park Drone Imagery project utilizes a DJI Mavic 3 drone equipped with an Altum sensor to map the park\'s landscape. The left image displays processed drone imagery, highlighting the flight path (orange) and capture points (yellow). The right image shows the raw imagery. Pink points on both represent manual data collection sites, essential for verifying the orthomosaic\'s radiometric accuracy from the drone\'s multispectral imaging.',
       image: images.DroneImagery,
+    },
+    {
+      name: 'GeoExplorer: Dynamic Earth Observation Explorer',
+      description: 'GeoExplorer: Dynamic Earth Observation Explorer leverages the Google Earth Engine\'s JavaScript API to enable an interactive exploration of NAIP imagery across California. It allows for dynamic selection of regions, sub-regions, and types of imagery according to user inputs. The application incorporates advanced GIS techniques, including spatial interpolation and raster calculations, and integrates FAO GAUL data for accurate mapping of administrative divisions. This is further enhanced through a custom UI panel developed in JavaScript, offering a sophisticated yet user-friendly experience in visualizing geospatial data.',
+      image: images.geoexplorer_base
     },
     {
       name: 'California Cities Weather Dashboard',
