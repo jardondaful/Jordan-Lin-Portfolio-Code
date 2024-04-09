@@ -14,15 +14,14 @@ function Projects() {
       images: [images.trailmatchImage, images.trailMatchCardImage, images.trailMatchMapImage],
     },
     {
+      name: 'HaggleHaul',
+      description: 'HaggleHaul is a web app designed to democratize ridesharing and allow users to schedule rides in advance amidst surge pricing and ride deserts. It features separate account types for Riders and Drivers, enabling Riders to post and receive bids for prescheduled trips. Riders can then select the most suitable driver based on bids received, thus determining the cost and driver for their trip.',
+      image: images.HaggleHaul,
+    },
+    {
       name: 'Bruin Bites',
       description: 'Bruin Bites is a website that allows UCLA students to more easily connect with their friends through food! Right off the bat, a new user can use the website to view what each restaurant/take-out option is serving, view their respective ratings, and even make them themselves.',
       image: images.BruinBitesImage,
-    },
-    
-    {
-        name: 'HaggleHaul',
-        description: 'HaggleHaul is a web app designed to democratize ridesharing and allow users to schedule rides in advance amidst surge pricing and ride deserts. It features separate account types for Riders and Drivers, enabling Riders to post and receive bids for prescheduled trips. Riders can then select the most suitable driver based on bids received, thus determining the cost and driver for their trip.',
-        image: images.HaggleHaul,
     },
     // Add more CS projects as needed
   ];
@@ -34,21 +33,6 @@ function Projects() {
       image: images.vernal_swale,
     },
     {
-      name: 'Sage Hill National Park Drone Imagery Analysis',
-      description: 'My Sage Hill National Park Drone Imagery project utilizes a DJI Mavic 3 drone equipped with an Altum sensor to map the park\'s landscape. The left image displays processed drone imagery, highlighting the flight path (orange) and capture points (yellow). The right image shows the raw imagery. Pink points on both represent manual data collection sites, essential for verifying the orthomosaic\'s radiometric accuracy from the drone\'s multispectral imaging.',
-      image: images.DroneImagery,
-    },
-    {
-      name: 'GeoExplorer: Dynamic Earth Observation Explorer',
-      description: 'GeoExplorer: Dynamic Earth Observation Explorer leverages the Google Earth Engine\'s JavaScript API to enable an interactive exploration of NAIP imagery across California. It allows for dynamic selection of regions, sub-regions, and types of imagery according to user inputs. The application incorporates advanced GIS techniques, including spatial interpolation and raster calculations, and integrates FAO GAUL data for accurate mapping of administrative divisions. This is further enhanced through a custom UI panel developed in JavaScript, offering a sophisticated yet user-friendly experience in visualizing geospatial data.',
-      image: images.geoexplorer_base
-    },
-    {
-      name: 'California Cities Weather Dashboard',
-      description: 'This was made with ArcGIS Pro and ArcGIS Dashboards, showcasing California\'s highest temperatures during the month of August. The interactive map highlights statewide temperature patterns and identifies major cities\' hottest and coldest points, fusing application design and data analytics with the power of GIS.',
-      image: images.DashboardImage,
-    },
-    {
       name: 'Bruin Bus Stop Locator',
       description: 'The Bus Stop Locator for Bruins is a Python-scripted toolbox built in ArcGIS Pro. The purpose of this project is to help locate bus stops within a desired proximity and provide recommendations on which buses to take based on current user inputted data. As output, it generates directions on which bus stops and routes to take in terminal and generates visual layouts of such directions.',
       images: [
@@ -57,6 +41,21 @@ function Projects() {
         images.bruin_bus_stop_locator_closest_facility_1,
         images.bruin_bus_stop_locator_closest_facility_2
       ],
+    },
+    {
+      name: 'California Cities Weather Dashboard',
+      description: 'This was made with ArcGIS Pro and ArcGIS Dashboards, showcasing California\'s highest temperatures during the month of August. The interactive map highlights statewide temperature patterns and identifies major cities\' hottest and coldest points, fusing application design and data analytics with the power of GIS.',
+      image: images.DashboardImage,
+    },
+    {
+      name: 'GeoExplorer: Dynamic Earth Observation Explorer',
+      description: 'GeoExplorer: Dynamic Earth Observation Explorer leverages the Google Earth Engine\'s JavaScript API to enable an interactive exploration of NAIP imagery across California. It allows for dynamic selection of regions, sub-regions, and types of imagery according to user inputs. The application incorporates advanced GIS techniques, including spatial interpolation and raster calculations, and integrates FAO GAUL data for accurate mapping of administrative divisions. This is further enhanced through a custom UI panel developed in JavaScript, offering a sophisticated yet user-friendly experience in visualizing geospatial data.',
+      image: images.geoexplorer_base
+    },
+    {
+      name: 'Sage Hill National Park Drone Imagery Analysis',
+      description: 'My Sage Hill National Park Drone Imagery project utilizes a DJI Mavic 3 drone equipped with an Altum sensor to map the park\'s landscape. The left image displays processed drone imagery, highlighting the flight path (orange) and capture points (yellow). The right image shows the raw imagery. Pink points on both represent manual data collection sites, essential for verifying the orthomosaic\'s radiometric accuracy from the drone\'s multispectral imaging.',
+      image: images.DroneImagery,
     },
     // Add more GIS projects as needed
   ];
