@@ -14,23 +14,14 @@ function Projects() {
       images: [images.trailmatchImage, images.trailMatchCardImage, images.trailMatchMapImage],
     },
     {
-      name: 'HaggleHaul',
-      description: 'HaggleHaul is a web app designed to democratize ridesharing and allow users to schedule rides in advance amidst surge pricing and ride deserts. It features separate account types for Riders and Drivers, enabling Riders to post and receive bids for prescheduled trips. Riders can then select the most suitable driver based on bids received, thus determining the cost and driver for their trip.',
-      image: images.HaggleHaul,
-    },
-    {
-      name: 'Bruin Bites',
-      description: 'Bruin Bites is a website that allows UCLA students to more easily connect with their friends through food! Right off the bat, a new user can use the website to view what each restaurant/take-out option is serving, view their respective ratings, and even make them themselves.',
-      image: images.BruinBitesImage,
-    },
-    // Add more CS projects as needed
-  ];
-
-  const gisProjects = [
-    {
       name: 'Mapping Vernal Swale Italian Thistle Invasion',
       description: 'This project entailed a detailed mapping of the invasive Italian Thistle spread within UC Sedgwick Reserve\'s Vernal Swale, utilizing UAV-based imagery. After a notably wet winter—the first significant hydration of the swale in a decade—an unexpected proliferation of Italian Thistle was observed. Our team deployed sophisticated UAV technology to capture high-resolution imagery, which, combined with ground truth data, offered a comprehensive analysis of the thistle\'s distribution and potential growth trajectories. This study not only underscores the critical importance of managing invasive species to preserve native biodiversity but also leverages cutting-edge tech to forecast ecological shifts within these natural reserves.',
       image: images.vernal_swale,
+    },
+    {
+      name: 'HaggleHaul',
+      description: 'HaggleHaul is a web app designed to democratize ridesharing and allow users to schedule rides in advance amidst surge pricing and ride deserts. It features separate account types for Riders and Drivers, enabling Riders to post and receive bids for prescheduled trips. Riders can then select the most suitable driver based on bids received, thus determining the cost and driver for their trip.',
+      image: images.HaggleHaul,
     },
     {
       name: 'Bruin Bus Stop Locator',
@@ -41,6 +32,11 @@ function Projects() {
         images.bruin_bus_stop_locator_closest_facility_1,
         images.bruin_bus_stop_locator_closest_facility_2
       ],
+    },
+    {
+      name: 'Bruin Bites',
+      description: 'Bruin Bites is a website that allows UCLA students to more easily connect with their friends through food! Right off the bat, a new user can use the website to view what each restaurant/take-out option is serving, view their respective ratings, and even make them themselves.',
+      image: images.BruinBitesImage,
     },
     {
       name: 'California Cities Weather Dashboard',
@@ -57,6 +53,11 @@ function Projects() {
       description: 'My Sage Hill National Park Drone Imagery project utilizes a DJI Mavic 3 drone equipped with an Altum sensor to map the park\'s landscape. The left image displays processed drone imagery, highlighting the flight path (orange) and capture points (yellow). The right image shows the raw imagery. Pink points on both represent manual data collection sites, essential for verifying the orthomosaic\'s radiometric accuracy from the drone\'s multispectral imaging.',
       image: images.DroneImagery,
     },
+    // Add more CS projects as needed
+  ];
+
+  const gisProjects = [
+  
     // Add more GIS projects as needed
   ];
 
@@ -87,14 +88,14 @@ function Projects() {
   return (
     <section className="projects-section">
       <h2>Projects</h2>
-      <div className="project-category-buttons">
+      {/* <div className="project-category-buttons">
         <button onClick={() => setActiveCategory('CS')} className={activeCategory === 'CS' ? 'active' : ''}>
           Software Projects
         </button>
         <button onClick={() => setActiveCategory('GIS')} className={activeCategory === 'GIS' ? 'active' : ''}>
           GIS Projects
         </button>
-      </div>
+      </div> */}
       {chunkedDisplayProjects.map((projectRow, rowIndex) => (
         <div className="project-row" key={rowIndex}>
           {projectRow.map((project, projectIndex) => (
