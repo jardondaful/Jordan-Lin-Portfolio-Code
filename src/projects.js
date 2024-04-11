@@ -15,7 +15,7 @@ function Projects() {
     },
     {
       name: 'Mapping Vernal Swale Italian Thistle Invasion',
-      description: 'This project entailed a detailed mapping of the invasive Italian Thistle spread within UC Sedgwick Reserve\'s Vernal Swale, utilizing UAV-based imagery. After a notably wet winter—the first significant hydration of the swale in a decade—an unexpected proliferation of Italian Thistle was observed. Our team deployed sophisticated UAV technology to capture high-resolution imagery, which, combined with ground truth data, offered a comprehensive analysis of the thistle\'s distribution and potential growth trajectories. This study not only underscores the critical importance of managing invasive species to preserve native biodiversity but also leverages cutting-edge tech to forecast ecological shifts within these natural reserves.',
+      description: 'This project involves conducting precise aerial imaging of the Vernal Swale at Sedgwick Reserve using a DJI Mavic 3 M drone equipped with an RTK receiver, integrated with ArcGIS Field Maps, to accurately map the current distribution of the invasive species Italian Thistle. It also includes analyzing the UAV imagery with Agisoft Metashape and utilizing ArcGIS Pro to predict the future spread of Italian Thistle, significantly enhancing the area\'s ecological impact assessment.',
       image: images.vernal_swale,
     },
     {
