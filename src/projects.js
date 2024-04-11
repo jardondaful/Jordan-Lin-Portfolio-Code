@@ -44,9 +44,9 @@ function Projects() {
       image: images.DashboardImage,
     },
     {
-      name: 'GeoExplorer: Dynamic Earth Observation Explorer',
+      name: 'TeraScope: Dynamic Earth Observation Explorer',
       description: 'GeoExplorer: Dynamic Earth Observation Explorer leverages the Google Earth Engine\'s JavaScript API to enable an interactive exploration of NAIP imagery across California. It allows for dynamic selection of regions, sub-regions, and types of imagery according to user inputs. The application incorporates advanced GIS techniques, including spatial interpolation and raster calculations, and integrates FAO GAUL data for accurate mapping of administrative divisions. This is further enhanced through a custom UI panel developed in JavaScript, offering a sophisticated yet user-friendly experience in visualizing geospatial data.',
-      image: images.geoexplorer_base
+      images: [images.geoexplorer_base, images.geoexplorer_modis]
     },
     {
       name: 'Sage Hill National Park Drone Imagery Analysis',
