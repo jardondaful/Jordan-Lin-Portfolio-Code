@@ -13,7 +13,7 @@ import bruin_bus_stop_locator_final_route_output from './bruin_bus_stop_locator_
 import bruin_bus_stop_locator_closest_facility_1 from './bruin_bus_stop_locator_closest_facility_1.png'
 import bruin_bus_stop_locator_closest_facility_2 from './bruin_bus_stop_locator_closest_facility_2.png'
 import geoexplorer_base from './geoexplorer_base.png'
-import geoexplorer_modis from './geoexplorer_modis.png'
+// import geoexplorer_modis from './geoexplorer_modis.png'
 import vernal_swale from './vernal_swale.jpeg'
 import HaggleHaul from './HaggleHaul.png'
 
@@ -33,7 +33,7 @@ const images = {
   bruin_bus_stop_locator_closest_facility_1,
   bruin_bus_stop_locator_closest_facility_2,
   geoexplorer_base,
-  geoexplorer_modis,
+  // geoexplorer_modis,
   vernal_swale,
   HaggleHaul
 };
