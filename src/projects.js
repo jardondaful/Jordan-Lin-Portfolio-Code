@@ -19,11 +19,6 @@ function Projects() {
       image: images.vernal_swale,
     },
     {
-      name: 'HaggleHaul',
-      description: 'HaggleHaul is a web app designed to democratize ridesharing and allow users to schedule rides in advance amidst surge pricing and ride deserts. It features separate account types for Riders and Drivers, enabling Riders to post and receive bids for prescheduled trips. Riders can then select the most suitable driver based on bids received, thus determining the cost and driver for their trip.',
-      image: images.HaggleHaul,
-    },
-    {
       name: 'Bruin Bus Stop Locator',
       description: 'The Bus Stop Locator for Bruins is a Python-scripted toolbox built in ArcGIS Pro. The purpose of this project is to help locate bus stops within a desired proximity and provide recommendations on which buses to take based on current user inputted data. As output, it generates directions on which bus stops and routes to take in terminal and generates visual layouts of such directions.',
       images: [
@@ -32,6 +27,11 @@ function Projects() {
         images.bruin_bus_stop_locator_closest_facility_1,
         images.bruin_bus_stop_locator_closest_facility_2
       ],
+    },
+    {
+      name: 'HaggleHaul',
+      description: 'HaggleHaul is a web app designed to democratize ridesharing and allow users to schedule rides in advance amidst surge pricing and ride deserts. It features separate account types for Riders and Drivers, enabling Riders to post and receive bids for prescheduled trips. Riders can then select the most suitable driver based on bids received, thus determining the cost and driver for their trip.',
+      image: images.HaggleHaul,
     },
     {
       name: 'Bruin Bites',
