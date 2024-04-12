@@ -10,7 +10,7 @@ function Projects() {
   const csProjects = [
     {
       name: 'TrailMatch: Hiking Made Easy',
-      description: 'TrailMatch combines ChatGPT API with ArcGIS\'s dynamic mapping products to present the user\'s ideal hiking trail, complete with a sunshine rating and locations of essential amenities like gas and electric charging stations. This synergy ensures a tailored and hassle-free outdoor experience, enhancing every step with interactive guidance and practical information.',
+      description: 'TrailMatch combines ChatGPT API with ArcGIS online products to present the user\'s ideal hiking trail, complete with a sunshine rating and locations of essential amenities like gas and electric charging stations. This synergy ensures a tailored and hassle-free outdoor experience, enhancing every step with interactive guidance and practical information.',
       images: [images.trailmatchImage, images.trailMatchCardImage, images.trailMatchMapImage],
     },
     {
