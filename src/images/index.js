@@ -16,7 +16,7 @@ import geoexplorer_base from './geoexplorer_base.png'
 // import geoexplorer_modis from './geoexplorer_modis.png'
 import vernal_swale from './vernal_swale.jpeg'
 import HaggleHaul from './HaggleHaul.png'
-import geoexplorer_2 from './geoexplorer_modis.png'
+import geoexplorer_2 from './geoexplorer_not_base.png'
 
 const images = {
   trailmatchImage,
