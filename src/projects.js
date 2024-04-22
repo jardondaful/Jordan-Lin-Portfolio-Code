@@ -15,7 +15,7 @@ function Projects() {
     },
     {
       name: 'Mapping Vernal Swale Italian Thistle Invasion',
-      description: 'This project involves conducting precise aerial imaging of the Vernal Swale at Sedgwick Reserve using a DJI Mavic 3 M drone and an RTK receiver connected to ArcGIS Field Maps to map the current distribution of the invasive species Italian Thistle. The data collected helps not only in documenting its current spread but also in predicting future encroachment patterns, aiding in effective management strategies.',
+      description: 'This project focuses on mapping and predicting the spread of the invasive Italian Thistle within the Vernal Swale at Sedgwick Reserve. Utilizing a DJI Mavic 3 M drone, high-resolution imagery was captured to assist with the mapping process. Additionally, an RTK receiver linked to ArcGIS Field Maps facilitated precise data collection on the current distribution of the Italian Thistle. The final data analysis was then performed using GRASS GIS.',
       image: images.vernal_swale,
     },
     {
