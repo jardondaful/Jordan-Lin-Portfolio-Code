@@ -20,7 +20,7 @@ function Projects() {
     },
     {
       name: 'Bruin Bus Stop Locator',
-      description: "The Bruin Bus Stop Locator is a Python-scripted toolbox built in ArcGIS Pro designed to help UCLA students provide recommendations on which buses to take based on current user-inputted data. As output, it generates directions on which bus stops and routes to take and provides visual layouts of these directions.",
+      description: "The Bruin Bus Stop Locator is a Python-scripted toolbox built in ArcGIS Pro designed to give UCLA students recommendations on which buses to take based on current user-inputted data. As output, it generates directions on which bus stops and routes to take and provides visual layouts of these directions.",
       images: [
         images.bruin_bus_stop_locator_final_route_output,
         images.bruin_bus_stop_locator_terminal,
