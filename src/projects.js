@@ -10,17 +10,17 @@ function Projects() {
   const csProjects = [
     {
       name: 'TrailMatch: Hiking Made Easy',
-      description: 'TrailMatch combines ChatGPT API with ArcGIS Online products to present the user\'s ideal hiking trail, complete with a sunshine rating and locations of essential amenities like gas and electric charging stations. This synergy ensures a tailored and hassle-free outdoor experience, enhancing every step with interactive guidance and practical information.',
+      description: 'TrailMatch combines ChatGPT API with ArcGIS Online products and React to present the user\'s ideal hiking trail! Each generated trail is complete with 3D visualzations of the tails, locations of essential amenities like gas and electric charging stations, and even sunshine ratings',
       images: [images.trailmatchImage, images.trailMatchCardImage, images.trailMatchMapImage],
     },
     {
       name: 'Mapping Vernal Swale Italian Thistle Invasion',
-      description: 'This project involves conducting precise aerial imaging of the Vernal Swale at Sedgwick Reserve using a DJI Mavic 3 M drone equipped with an RTK receiver, integrated with ArcGIS Field Maps, to accurately map the current distribution of the invasive species Italian Thistle. It also includes analyzing the UAV imagery with Agisoft Metashape and utilizing ArcGIS Pro to predict the future spread of Italian Thistle, significantly enhancing the area\'s ecological impact assessment.',
+      description: 'This project involves conducting precise aerial imaging of the Vernal Swale at Sedgwick Reserve using a DJI Mavic 3 M drone and an RTK receiver connected to ArcGIS Field Maps to map the current distribution of the invasive species Italian Thistle. The data collected helps not only in documenting its current spread but also in predicting future encroachment patterns, aiding in effective management strategies.',
       image: images.vernal_swale,
     },
     {
       name: 'Bruin Bus Stop Locator',
-      description: 'The Bus Stop Locator for Bruins is a Python-scripted toolbox built in ArcGIS Pro. The purpose of this project is to help locate bus stops within a desired proximity and provide recommendations on which buses to take based on current user inputted data. As output, it generates directions on which bus stops and routes to take in terminal and generates visual layouts of such directions.',
+      description: "The Bruin Bus Stop Locator is a Python-scripted toolbox built in ArcGIS Pro designed to help UCLA students provide recommendations on which buses to take based on current user-inputted data. As output, it generates directions on which bus stops and routes to take and provides visual layouts of these directions.",
       images: [
         images.bruin_bus_stop_locator_final_route_output,
         images.bruin_bus_stop_locator_terminal,
@@ -30,7 +30,7 @@ function Projects() {
     },
     {
       name: 'HaggleHaul',
-      description: 'HaggleHaul is a web app designed to democratize ridesharing and allow users to schedule rides in advance amidst surge pricing and ride deserts. It features separate account types for Riders and Drivers, enabling Riders to post and receive bids for prescheduled trips. Riders can then select the most suitable driver based on bids received, thus determining the cost and driver for their trip.',
+      description: 'HaggleHaul is a web application designed to democratize ridesharing by allow users to directly negotiate ride fares with their drivers. Riders can preschedule a trip they need to take, and potential drivers can bid with each other on their lowest offers to take the fares.',
       image: images.HaggleHaul,
     },
     {
