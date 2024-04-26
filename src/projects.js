@@ -45,12 +45,12 @@ function Projects() {
     },
     {
       name: 'TeraScope: Dynamic Earth Observation Explorer',
-      description: 'GeoExplorer: Dynamic Earth Observation Explorer leverages the Google Earth Engine\'s JavaScript API to enable an interactive exploration of NAIP imagery across California. It allows for dynamic selection of regions, sub-regions, and types of imagery according to user inputs. The application incorporates advanced GIS techniques, including spatial interpolation and raster calculations, and integrates FAO GAUL data for accurate mapping of administrative divisions. This is further enhanced through a custom UI panel developed in JavaScript, offering a sophisticated yet user-friendly experience in visualizing geospatial data.',
+      description: 'GeoExplorer: Dynamic Earth Observation Explorer leverages Google Earth Engine\'s JavaScript API to enable interactive exploration of NAIP imagery across California. It allows for exploration of any subregion in the world at any year within the 21st century. The application incorporates advanced GIS techniques, including spatial interpolation and raster calculations, and integrates FAO GAUL data for accurate mapping of administrative divisions.',
       images: [images.geoexplorer_base, images.geoexplorer_2],
     },
     {
       name: 'Sage Hill National Park Drone Imagery Analysis',
-      description: 'My Sage Hill National Park Drone Imagery project utilizes a DJI Mavic 3 drone equipped with an Altum sensor to map the park\'s landscape. The left image displays processed drone imagery, highlighting the flight path (orange) and capture points (yellow). The right image shows the raw imagery. Pink points on both represent manual data collection sites, essential for verifying the orthomosaic\'s radiometric accuracy from the drone\'s multispectral imaging.',
+      description: 'Sage Hill National Park Drone Imagery Analysis captures the detailed topography and vegetation patterns using a DJI Mavic 3 drone equipped with an Altum sensor. The displayed image showcases the processed drone imagery, overlaid with the drone\'s flight path (orange lines) and capture points (yellow markers). The pink points indicate areas where manual ground truthing was conducted, which are critical for validating the orthomosaic\'s radiometric precision from the drone\'s multispectral imaging.',
       image: images.DroneImagery,
     },
     // Add more CS projects as needed
