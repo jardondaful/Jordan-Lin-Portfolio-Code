@@ -17,6 +17,10 @@ import geoexplorer_base from './geoexplorer_base.png'
 import vernal_swale from './vernal_swale.jpeg'
 import HaggleHaul from './HaggleHaul.png'
 import geoexplorer_2 from './geoexplorer_not_base.png'
+import bruin_bites_profile_section from './bruin_bites_profile_section.png'
+import bruin_bites_reviews_page from './bruin_bites_reviews_page.png'
+import bruin_bites_embedded_menu from './bruin_bites_embedded_menu.png'
+
 
 const images = {
   trailmatchImage,
@@ -37,7 +41,10 @@ const images = {
   // geoexplorer_modis,
   vernal_swale,
   HaggleHaul,
-  geoexplorer_2
+  geoexplorer_2,
+  bruin_bites_profile_section,
+  bruin_bites_reviews_page,
+  bruin_bites_embedded_menu,
 };
 
 export default images;

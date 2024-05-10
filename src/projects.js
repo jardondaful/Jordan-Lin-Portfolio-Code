@@ -14,9 +14,9 @@ function Projects() {
       images: [images.trailmatchImage, images.trailMatchCardImage, images.trailMatchMapImage],
     },
     {
-      name: 'Mapping Vernal Swale Italian Thistle Invasion',
-      description: 'This project focuses on mapping and predicting the spread of the invasive Italian Thistle within the Vernal Swale at Sedgwick Reserve. Utilizing a DJI Mavic 3 M drone, high-resolution imagery was captured to assist with the mapping process. Additionally, an RTK receiver linked to ArcGIS Field Maps facilitated precise data collection on the current distribution of the Italian Thistle. The final data analysis was then performed using GRASS GIS.',
-      image: images.vernal_swale,
+      name: 'HaggleHaul',
+      description: 'HaggleHaul is a web application designed to democratize ridesharing by allow users to directly negotiate ride fares with their drivers. Riders can preschedule a trip they need to take, and potential drivers can bid with each other on their lowest offers to take the fares.',
+      image: images.HaggleHaul,
     },
     {
       name: 'Bruin Bus Stop Locator',
@@ -29,14 +29,14 @@ function Projects() {
       ],
     },
     {
-      name: 'HaggleHaul',
-      description: 'HaggleHaul is a web application designed to democratize ridesharing by allow users to directly negotiate ride fares with their drivers. Riders can preschedule a trip they need to take, and potential drivers can bid with each other on their lowest offers to take the fares.',
-      image: images.HaggleHaul,
+      name: 'Bruin Bites',
+      description: 'Bruin Bites is a website that allows UCLA students to more easily connect with their friends through food! Right off the bat, a new user can use the website to view what each restaurant/take-out option is serving, view and make their respective ratings, and even track their and their friends\'s dining history.',
+      image: [images.BruinBitesImage]
     },
     {
-      name: 'Bruin Bites',
-      description: 'Bruin Bites is a website that allows UCLA students to more easily connect with their friends through food! Right off the bat, a new user can use the website to view what each restaurant/take-out option is serving, view their respective ratings, and even make them themselves.',
-      image: images.BruinBitesImage,
+      name: 'TeraScope: Dynamic Earth Observation Explorer',
+      description: 'GeoExplorer: Dynamic Earth Observation Explorer leverages Google Earth Engine\'s JavaScript API to enable interactive exploration of NAIP imagery across California. It allows for exploration of any subregion in the world at any year within the 21st century. The application incorporates advanced GIS techniques, including spatial interpolation and raster calculations, and integrates FAO GAUL data for accurate mapping of administrative divisions.',
+      images: [images.geoexplorer_base, images.geoexplorer_2],
     },
     {
       name: 'California Cities Weather Dashboard',
@@ -44,9 +44,9 @@ function Projects() {
       image: images.DashboardImage,
     },
     {
-      name: 'TeraScope: Dynamic Earth Observation Explorer',
-      description: 'GeoExplorer: Dynamic Earth Observation Explorer leverages Google Earth Engine\'s JavaScript API to enable interactive exploration of NAIP imagery across California. It allows for exploration of any subregion in the world at any year within the 21st century. The application incorporates advanced GIS techniques, including spatial interpolation and raster calculations, and integrates FAO GAUL data for accurate mapping of administrative divisions.',
-      images: [images.geoexplorer_base, images.geoexplorer_2],
+      name: 'Mapping Vernal Swale Italian Thistle Invasion',
+      description: 'This project focuses on mapping and predicting the spread of the invasive Italian Thistle within the Vernal Swale at Sedgwick Reserve. Utilizing a DJI Mavic 3 M drone, high-resolution imagery was captured to assist with the mapping process. Additionally, an RTK receiver linked to ArcGIS Field Maps facilitated precise data collection on the current distribution of the Italian Thistle. The final data analysis was then performed using GRASS GIS.',
+      image: images.vernal_swale,
     },
     {
       name: 'Sage Hill National Park Drone Imagery Analysis',
