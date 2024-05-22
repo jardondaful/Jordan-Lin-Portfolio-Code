@@ -5,7 +5,6 @@
     margin-bottom: 20px;
     font-family: 'Nunito', sans-serif;
 }
-
 body, button {
     font-family: 'Nunito', sans-serif;
 }
@@ -13,12 +12,11 @@ body, button {
 .project-category-buttons button {
     padding: 10px 20px;
     margin-right: 10px;
-    border: 2px solid #ccc; /* Slight border to buttons for definition */
+    border: 2px solid #ccc;
     border-radius: 5px;
     background-color: #f0f0f0;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease, color 0.3s;
-    /* Ensure the text is centered in the button */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -26,33 +24,33 @@ body, button {
 
 .project-category-buttons button:hover {
     background-color: #dedede;
-    color: #333; /* Darker text color on hover */
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    color: #333;
+    transform: scale(1.05);
 }
 
 .project-category-buttons button:active {
-    transform: scale(0.95); /* Slightly decreases size on click */
+    transform: scale(0.95);
 }
 
 .project-category-buttons button.active {
     background-color: #007bff;
     color: white;
-    border-color: #0056b3; /* Border color similar to background for active button */
+    border-color: #0056b3;
 }
 
 .arrow-button {
     border-radius: 50%;
-    background-color: #ffffff; /* A clean white background */
-    color: #007bff; /* A blue color for the arrow to make it stand out */
-    width: 50px;
-    height: 50px;
+    background-color: #ffffff;
+    color: #007bff;
+    width: 40px;  /* Adjusted for better fit */
+    height: 40px;
     padding: 0;
-    border: 2px solid #007bff; /* A blue border to match the arrow color */
+    border: 2px solid #007bff;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: absolute;
     top: 50%;
@@ -61,60 +59,74 @@ body, button {
 }
 
 .arrow-button:hover {
-    background-color: #007bff; /* Change background to blue on hover */
-    color: #ffffff; /* Change arrow to white on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow size for depth */
+    background-color: #007bff;
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .left-arrow {
-    left: 10px; /* Adjust to ensure visibility on small screens */
+    left: 10px;
 }
 
 .right-arrow {
-    right: 10px; /* Adjust to ensure visibility on small screens */
+    right: 10px;
 }
 
 .projects-section {
-    padding: 20px; /* Ensure there's padding around the entire section if desired */
+    padding: 20px;
 }
 
 .project-row {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around; /* This will space out the projects equally */
-    flex-wrap: wrap; /* Allows project cards to wrap to the next line */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .project {
-    flex-grow: 1; /* Allows the project to grow and fill the parent */
-    margin: 10px; /* Apply equal margin to all sides of the projects for symmetry */
-    flex: 1 0 calc(50% - 20px); /* Adjust the 20px to double the margin */
-    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
-    max-width: calc(50% - 20px); /* Keep max-width to limit how much space a project can take */
-    min-width: 300px; /* Minimum width of each project card */
+    flex-grow: 1;
+    margin: 10px;
+    flex: 1 0 100%;  /* Takes full width on smaller screens */
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .project-image-container {
-    overflow: hidden; /* Hide the overflowed images */
-    position: relative; /* Set a stacking context */
+    overflow: hidden;
+    position: relative;
 }
 
 .project-images {
-    display: flex; /* Align images horizontally */
-    transition: transform 0.5s ease-out; /* Smooth transition for the transform property */
-    width: 100%; /* Full width to allow side by side image layout */
+    display: flex;
+    transition: transform 0.5s ease-out;
+    width: 100%;
 }
 
 .project-image {
-    min-width: 100%; /* Each image takes the full width of the container */
-    transition: opacity 0.5s ease-in-out; /* Fade effect for changing images */
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
+    .project {
+        margin: 5px 0;  /* Reduced margin in mobile view */
+        padding: 0 10px;  /* Slight padding for text alignment */
+    }
+
+    .project h3 {
+        font-size: 18px;  /* Smaller font size for headers */
+        margin-top: 10px; /* Reduced top margin */
+        margin-bottom: 5px; /* Reduced bottom margin */
+    }
+
+    .project p {
+        font-size: 14px;  /* Smaller font size for paragraph */
+        margin-top: 5px;  /* Reduced top margin */
+        margin-bottom: 10px; /* Reduced bottom margin */
+    }
+
     .arrow-button {
-        display: flex; /* Ensure arrow buttons are always visible */
-        width: 40px; /* Smaller size for better mobile fit */
-        height: 40px;
+        display: flex; /* Ensure arrow buttons are visible */
     }
 }
