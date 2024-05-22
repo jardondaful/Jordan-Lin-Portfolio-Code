@@ -4,12 +4,13 @@
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Nunito', sans-serif;
-  }
-  body, button {
+}
+
+body, button {
     font-family: 'Nunito', sans-serif;
-  }
-  
-  .project-category-buttons button {
+}
+
+.project-category-buttons button {
     padding: 10px 20px;
     margin-right: 10px;
     border: 2px solid #ccc; /* Slight border to buttons for definition */
@@ -21,25 +22,25 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .project-category-buttons button:hover {
+}
+
+.project-category-buttons button:hover {
     background-color: #dedede;
     color: #333; /* Darker text color on hover */
     transform: scale(1.05); /* Slightly enlarges the button on hover */
-  }
-  
-  .project-category-buttons button:active {
+}
+
+.project-category-buttons button:active {
     transform: scale(0.95); /* Slightly decreases size on click */
-  }
-  
-  .project-category-buttons button.active {
+}
+
+.project-category-buttons button.active {
     background-color: #007bff;
     color: white;
     border-color: #0056b3; /* Border color similar to background for active button */
-  }
-  
-  .arrow-button {
+}
+
+.arrow-button {
     border-radius: 50%;
     background-color: #ffffff; /* A clean white background */
     color: #007bff; /* A blue color for the arrow to make it stand out */
@@ -57,92 +58,63 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-  }
-  
-  .arrow-button:hover {
+}
+
+.arrow-button:hover {
     background-color: #007bff; /* Change background to blue on hover */
     color: #ffffff; /* Change arrow to white on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow size for depth */
-  }
-  
-  /* Adjustments to the left and right positions */
-  .left-arrow {
-    left: 20px; /* Slightly away from the edge for spacing */
-  }
-  
-  .right-arrow {
-    right: 20px; /* Slightly away from the edge for spacing */
-  }
-  .projects-section {
-    /* Ensure there's padding around the entire section if desired */
-    padding: 20px;
-  }
-  
-  .project-row {
-    /* Remove any margin or padding that may affect the symmetry */
+}
+
+.left-arrow {
+    left: 10px; /* Adjust to ensure visibility on small screens */
+}
+
+.right-arrow {
+    right: 10px; /* Adjust to ensure visibility on small screens */
+}
+
+.projects-section {
+    padding: 20px; /* Ensure there's padding around the entire section if desired */
+}
+
+.project-row {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around; /* This will space out the projects equally */
     flex-wrap: wrap; /* Allows project cards to wrap to the next line */
-  }
-  
-  .project {
+}
+
+.project {
     flex-grow: 1; /* Allows the project to grow and fill the parent */
-    /* Apply equal margin to all sides of the projects for symmetry */
-    margin: 10px; /* Adjust this value to suit the desired gap */
+    margin: 10px; /* Apply equal margin to all sides of the projects for symmetry */
     flex: 1 0 calc(50% - 20px); /* Adjust the 20px to double the margin */
     box-sizing: border-box; /* Include padding and borders in the element's total width and height */
-    
-    /* Keep max-width to limit how much space a project can take, and min-width to prevent them from getting too small */
-    max-width: calc(50% - 20px); /* Adjust the 20px to double the margin */
+    max-width: calc(50% - 20px); /* Keep max-width to limit how much space a project can take */
     min-width: 300px; /* Minimum width of each project card */
-  }
-  
-  .project-image-container {
+}
+
+.project-image-container {
     overflow: hidden; /* Hide the overflowed images */
     position: relative; /* Set a stacking context */
-  }
-  
-  .project-images {
+}
+
+.project-images {
     display: flex; /* Align images horizontally */
     transition: transform 0.5s ease-out; /* Smooth transition for the transform property */
-  }
-  
-  .project-image {
+    width: 100%; /* Full width to allow side by side image layout */
+}
+
+.project-image {
     min-width: 100%; /* Each image takes the full width of the container */
     transition: opacity 0.5s ease-in-out; /* Fade effect for changing images */
-  }
-  
-  /* Add responsive styles if needed for smaller screens */
- 
-  @media screen and (max-width: 768px) {
-    .project-row {
-      /* Ensures projects are stacked vertically on small screens */
-      flex-direction: column; 
-    }
-  
-    .project {
-      /* This makes the project take up the full width of its container */
-      flex: 0 0 100%;
-      max-width: 100%;
-      /* Adjusts the margin to provide space between the projects */
-      margin: 10px 0; 
-      /* Additional padding can be adjusted as needed */
-      padding: 0 10px;
-      /* Ensures that padding is included in the element's total width and height */
-      box-sizing: border-box; 
-    }
-  
-    .project-image-container,
-    .project-image {
-      /* Ensures image containers and images stretch to the full width of their container */
-      width: 100%;
-      height: auto; /* Maintains the aspect ratio of the images */
-    }
-  
-    /* Remove left and right arrows in mobile view for simplicity or adjust their positioning as needed */
+}
+
+@media screen and (max-width: 768px) {
     .arrow-button {
-      display: none;
+        display: flex; /* Ensure arrow buttons are always visible */
+        width: 40px; /* Smaller size for better mobile fit */
+        height: 40px;
     }
-  }
+}

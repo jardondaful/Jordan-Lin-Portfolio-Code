@@ -73,14 +73,16 @@ function Projects() {
   const handleNavigation = (projectName, offset, length) => {
     setProjectIndexes(prevIndexes => {
       const currentIndex = (prevIndexes[projectName] || 0) + offset;
-      const newIndex = (currentIndex + length) % length; // Wrap around the images
+      const newIndex = currentIndex % length;
       return { ...prevIndexes, [projectName]: newIndex };
     });
   };
-
+  
+  // Use this function to calculate the correct translation for the carousel
   const getCurrentIndex = projectName => {
     return projectIndexes[projectName] || 0;
   };
+  
 
   const displayedProjects = activeCategory === 'CS' ? csProjects : gisProjects;
   const chunkedDisplayProjects = chunkedProjects(displayedProjects, 3);
