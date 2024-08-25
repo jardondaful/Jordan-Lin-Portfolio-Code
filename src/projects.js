@@ -16,7 +16,7 @@ function Projects() {
     {
       name: 'HaggleHaul',
       description: 'HaggleHaul is a web application designed to democratize ridesharing by allow users to directly negotiate ride fares with their drivers. Riders can preschedule a trip they need to take, and potential drivers can bid with each other on their lowest offers to take the fares.',
-      image: images.HaggleHaul,
+      image: [images.HaggleHaul],
     },
     {
       name: 'Bruin Bus Stop Locator',

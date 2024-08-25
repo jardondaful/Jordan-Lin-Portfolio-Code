@@ -20,6 +20,10 @@ import geoexplorer_2 from './geoexplorer_not_base.png'
 // import bruin_bites_profile_section from './bruin_bites_profile_section.png'
 // import bruin_bites_reviews_page from './bruin_bites_reviews_page.png'
 // import bruin_bites_embedded_menu from './bruin_bites_embedded_menu.png'
+import AddTrip from './Add Trip.png'
+import ArchivedTripsMobile from './Archived Trips Mobile.webp'
+import ArchivedTrips from './Archived Trips.webp'
+import PleaseLogIn from './Please Log In.webp'
 
 
 const images = {
@@ -45,6 +49,8 @@ const images = {
   // bruin_bites_profile_section,
   // bruin_bites_reviews_page,
   // bruin_bites_embedded_menu,
+  AddTrip
+
 };
 
 export default images;
