@@ -19,6 +19,16 @@ function Projects() {
       image: [images.HaggleHaul],
     },
     {
+      name: "UCLA's DMA Printlab Interface",
+      description: 'This interface provides real-time monitoring of any amount of machines in a server by utilizing React for a dynamic frontend and SQL for data management, alongside Ansible and YAML for data retrieval. Developed for UCLA\'s DMA Printlab, this tool offered insights into printer availability, maintenance needs, and usage statistics, enabling staff to swiftly address issues, optimize resource allocation, and enhance overall operational efficiency.',
+      image: [images.StatusInterface],
+    },
+    {
+      name: 'Bruin Bites',
+      description: 'Bruin Bites is a website that allows UCLA students to more easily connect with their friends through food! Right off the bat, a new user can use the website to view what each restaurant/take-out option is serving, view and make their respective ratings, and even track their and their friends\'s dining history.',
+      image: [images.BruinBitesImage]
+    },
+    {
       name: 'Bruin Bus Stop Locator',
       description: "The Bruin Bus Stop Locator is a Python-scripted toolbox built in ArcGIS Pro designed to give UCLA students recommendations on which buses to take based on current user-inputted data. As output, it generates directions on which bus stops and routes to take and provides visual layouts of these directions.",
       images: [
@@ -27,11 +37,6 @@ function Projects() {
         images.bruin_bus_stop_locator_closest_facility_1,
         images.bruin_bus_stop_locator_closest_facility_2
       ],
-    },
-    {
-      name: 'Bruin Bites',
-      description: 'Bruin Bites is a website that allows UCLA students to more easily connect with their friends through food! Right off the bat, a new user can use the website to view what each restaurant/take-out option is serving, view and make their respective ratings, and even track their and their friends\'s dining history.',
-      image: [images.BruinBitesImage]
     },
     {
       name: 'TeraScope: Dynamic Earth Observation Explorer',

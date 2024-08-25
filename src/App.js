@@ -34,7 +34,7 @@ function App() {
       <div className="connect-container">
         <a href="https://www.linkedin.com/in/jordanlin2003/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
         <a href="https://github.com/jardondaful" target="_blank" rel="noopener noreferrer">GitHub</a> |
-        <a href="https://drive.google.com/file/d/1HN2tPJzlOL6bvYBOPUmMpDVP_E4Sh-gM/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="https://drive.google.com/file/d/1mjjP9rm9TjybTxR0z5PiAm-2KRf99wUj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
 
     </header>

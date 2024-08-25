@@ -24,7 +24,7 @@ import AddTrip from './Add Trip.png'
 import ArchivedTripsMobile from './Archived Trips Mobile.webp'
 import ArchivedTrips from './Archived Trips.webp'
 import PleaseLogIn from './Please Log In.webp'
-
+import StatusInterface from './UCLA DMA Printlab.png'
 
 const images = {
   trailmatchImage,
@@ -49,7 +49,8 @@ const images = {
   // bruin_bites_profile_section,
   // bruin_bites_reviews_page,
   // bruin_bites_embedded_menu,
-  AddTrip
+  AddTrip,
+  StatusInterface
 
 };
 
