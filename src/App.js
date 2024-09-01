@@ -30,7 +30,7 @@ function App() {
     <header className={`App-header section-fade ${scrollClass}`}>
       <img src={images.profile_picture} alt="Jordan Lin" className="profile-picture" />
       <h1>Jordan Lin</h1>
-      <p style={{ marginTop: '30px', marginBottom: '20px' }}>Developer, IT Technician, GIS Analyst</p>
+      <p style={{ marginTop: '30px', marginBottom: '20px' }}>Developer, Data Scientist, GIS Analyst</p>
       <div className="connect-container">
         <a href="https://www.linkedin.com/in/jordanlin2003/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
         <a href="https://github.com/jardondaful" target="_blank" rel="noopener noreferrer">GitHub</a> |
