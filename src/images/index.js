@@ -25,6 +25,11 @@ import ArchivedTripsMobile from './Archived Trips Mobile.webp'
 import ArchivedTrips from './Archived Trips.webp'
 import PleaseLogIn from './Please Log In.webp'
 import StatusInterface from './UCLA DMA Printlab.png'
+import YourCustomPlaylist from './Spotify Dashboard Images/Your Custom Playlist.png'
+import RecommendedTracks from './Spotify Dashboard Images/Recommended Tracks for You.png'
+import YourTopTenArtists from './Spotify Dashboard Images/Your Top Ten Artists.png'
+import YourListeningTrends from './Spotify Dashboard Images/Your Listening Trends.png'
+import YourTopTracks from './Spotify Dashboard Images/Your Top Tracks.png'
 
 const images = {
   trailmatchImage,
@@ -50,8 +55,13 @@ const images = {
   // bruin_bites_reviews_page,
   // bruin_bites_embedded_menu,
   AddTrip,
-  StatusInterface
-
+  StatusInterface,
+  
+  YourCustomPlaylist,
+  RecommendedTracks,
+  YourTopTenArtists,
+  YourListeningTrends,
+  YourTopTracks,
 };
 
 export default images;
