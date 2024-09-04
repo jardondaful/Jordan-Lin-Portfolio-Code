@@ -30,6 +30,7 @@ import RecommendedTracks from './Spotify Dashboard Images/Recommended Tracks for
 import YourTopTenArtists from './Spotify Dashboard Images/Your Top Ten Artists.png'
 import YourListeningTrends from './Spotify Dashboard Images/Your Listening Trends.png'
 import YourTopTracks from './Spotify Dashboard Images/Your Top Tracks.png'
+import YourListeningPatterns from './Spotify Dashboard Images/Your Listening Patterns.png'
 
 const images = {
   trailmatchImage,
@@ -62,6 +63,7 @@ const images = {
   YourTopTenArtists,
   YourListeningTrends,
   YourTopTracks,
+  YourListeningPatterns
 };
 
 export default images;

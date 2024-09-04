@@ -21,11 +21,12 @@ function Projects() {
       name: "UCLA's DMA Printlab Interface",
       description: 'This interface provides real-time monitoring of any amount of machines in a server by utilizing React for a dynamic frontend and SQL for data management, alongside Ansible and YAML for data retrieval. Developed for UCLA\'s DMA Printlab, this tool offered insights into printer availability, maintenance needs, and usage statistics, enabling staff to swiftly address issues, optimize resource allocation, and enhance overall operational efficiency.',
       images: [images.StatusInterface],
+      className: 'dma-printlab' // Add this specific class
     },
     {
       name: "Spotify Listening Analytics and Recommendation Dashboard",
       description: 'This Flask-based data analytics application integrates with the Spotify API to deliver personalized insights into the user\'s listening habits. Upon logging into their Spotify account, the user can explore visualizations of their top artists, tracks, and listening trends. The app features custom playlist generation based on the user\'s listening history and preferences. To enhance performance, the application utilizes multithreading for efficient data processing.',
-      images: [images.YourTopTenArtists, images.YourListeningTrends, images.YourTopTracks, images.RecommendedTracks, images.YourCustomPlaylist],
+      images: [images.YourTopTenArtists, images.YourListeningTrends, images.YourTopTracks, images.RecommendedTracks, images.YourCustomPlaylist, images.YourListeningPatterns],
     },
     {
       name: 'Bruin Bus Stop Locator',
